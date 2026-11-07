@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+    background-color: #050B1F;
+    color: #F0F6FC;
+    touch-action: manipulation;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .font-arcade {
+    font-family: 'Press Start 2P', monospace;
+  }
+
+  .font-tech {
+    font-family: 'Chakra Petch', 'Outfit', sans-serif;
+  }
+}
+
+/* Custom glow and arcade lighting utilities */
+.glow-cyan {
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.4), inset 0 0 10px rgba(0, 240, 255, 0.2);
+}
+
+.glow-cyan-sm {
+  box-shadow: 0 0 10px rgba(0, 240, 255, 0.35);
+}
+
+.glow-cyan-lg {
+  box-shadow: 0 0 30px rgba(0, 240, 255, 0.6), 0 0 60px rgba(0, 240, 255, 0.25);
+}
+
+.glow-gold {
+  box-shadow: 0 0 20px rgba(255, 215, 0, 0.4), inset 0 0 10px rgba(255, 215, 0, 0.2);
+}
+
+.text-glow-cyan {
+  text-shadow: 0 0 12px rgba(0, 240, 255, 0.7);
+}
+
+.text-glow-gold {
+  text-shadow: 0 0 14px rgba(255, 215, 0, 0.8);
+}
+
+/* Arcade scanlines background overlay */
+.arcade-grid {
+  background-image: 
+    linear-gradient(rgba(0, 240, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 240, 255, 0.05) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #050B1F;
+}
+::-webkit-scrollbar-thumb {
+  background: #11285A;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00F0FF;
+}

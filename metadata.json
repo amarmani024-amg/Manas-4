@@ -1,0 +1,6 @@
+{
+  "name": "Adventure Arena",
+  "description": "An arcade world of discipline, strength, and triumph.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
